@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'job_post_screen.dart';
 import 'candidate_list_screen.dart';
+import 'resume_database_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -29,6 +30,17 @@ class HomeScreen extends StatelessWidget {
               },
               child: Text('View Candidates'),
             ),
+             ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ResumeDatabaseScreen(),
+              ),
+            );
+          },
+          child: Text('Go to Resume Database'),
+        ),
           ],
         ),
       ),

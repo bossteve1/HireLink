@@ -12,7 +12,7 @@ class CandidateListScreen extends StatelessWidget {
       appBar: AppBar(title: Text('Candidates List')),
       body: ListView.builder(
         itemCount: candidates.length,
-        itemBuilder: (ctx, index) => CandidateCard(candidate: candidates[index]),
+        itemBuilder: (ctx, index) => CandidateCard(candidate: candidates[index], name: '', skills: '', experience: '', preference: '', imageUrl: '',),
       ),
     );
   }

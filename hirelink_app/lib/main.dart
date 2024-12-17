@@ -7,6 +7,8 @@ import './screens/job_post_screen.dart';
 import './screens/candidate_list_screen.dart';
 import './screens/interview_schedule_screen.dart';
 
+
+
 void main() {
   runApp(MyApp());
 }
